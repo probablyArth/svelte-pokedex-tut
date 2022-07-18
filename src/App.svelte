@@ -4,7 +4,6 @@
   import Navbar from "./components/Navbar.svelte";
   import Button from "./components/Button.svelte";
   import PokemonGrid from "./components/PokemonGrid.svelte";
-  import Pokemon from "./components/Pokemon.svelte";
 
   let offset = 0;
 
@@ -26,11 +25,9 @@
           <Button on:changeOffset={decreaseOffset}>Prev</Button>
         {/if}
         <Button on:changeOffset={increaseOffset}>Next</Button>
-      </div></Route
-    ><PokemonGrid {offset} />
-    <Route path="/:name" let:params>
-      <Pokemon name={params.name} />
-    </Route>
+      </div>
+      <PokemonGrid {offset} /></Route
+    >
   </Router>
 </main>
 
