@@ -4,6 +4,7 @@
   import Navbar from "./components/Navbar.svelte";
   import Button from "./components/Button.svelte";
   import PokemonGrid from "./components/PokemonGrid.svelte";
+  import Pokemon from "./components/Pokemon.svelte";
 
   let offset = 0;
 
